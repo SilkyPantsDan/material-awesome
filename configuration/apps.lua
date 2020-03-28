@@ -40,7 +40,7 @@ return {
      'flameshot',
      'optimus-manager-qt',
      'steam -silent',
-     'discord',
+     'discord --start-minimized',
      'slack -u',
     -- Add applications that need to be killed between reloads
     -- to avoid multipled instances, inside the awspawn script

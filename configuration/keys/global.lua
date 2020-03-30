@@ -302,11 +302,27 @@ local globalKeys =
   ),
   awful.key(
     {},
+    'XF86AudioPlay',
+    function()
+      awful.spawn('dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause');
+    end,
+    {description = 'Toggle Play/Pause in Spotify', group = 'spotify'}
+  ),
+  awful.key(
+    {},
     'XF86AudioNext',
     function()
-      --
+      awful.spawn('dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next');
     end,
-    {description = 'toggle mute', group = 'hotkeys'}
+    {description = 'Next Track in Spotify', group = 'spotify'}
+  ),
+  awful.key(
+    {},
+    'XF86AudioPrev',
+    function()
+      awful.spawn('dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous');
+    end,
+    {description = 'Previous Track in Spotify', group = 'spotify'}
   ),
   awful.key(
     {},

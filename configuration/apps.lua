@@ -13,8 +13,8 @@ return {
     lock = 'i3lock-fancy-multimonitor',
     quake = 'mate-terminal',
     screenshot = '~/.config/awesome/configuration/utils/screenshot',
-    region_screenshot = '~/.config/awesome/configuration/utils/screenshot -a',
-    delayed_screenshot = 'sleep 10 ; ~/.config/awesome/configuration/utils/screenshot -a -d 10',
+    region_screenshot = '~/.config/awesome/configuration/utils/screenshot -s',
+    delayed_screenshot = '~/.config/awesome/configuration/utils/screenshot -s -d 10',
     
     -- Editing these also edits the default program
     -- associated with each tag/workspace

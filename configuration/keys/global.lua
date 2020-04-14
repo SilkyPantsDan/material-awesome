@@ -87,6 +87,7 @@ local globalKeys =
   awful.key(
     {modkey},
     'Print',
+    nil,
     function()
       awful.util.spawn_with_shell(apps.default.delayed_screenshot)
     end,
@@ -103,6 +104,7 @@ local globalKeys =
   awful.key(
     {'Control'},
     'Print',
+    nil,
     function()
       awful.util.spawn_with_shell(apps.default.region_screenshot)
     end,
